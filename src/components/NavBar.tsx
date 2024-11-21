@@ -9,6 +9,7 @@ import BottomNavigationAction from '@mui/material/BottomNavigationAction';
 import AccountCircleRoundedIcon from '@mui/icons-material/AccountCircleRounded';
 import HomeRoundedIcon from '@mui/icons-material/HomeRounded';
 import AddCircleRoundedIcon from '@mui/icons-material/AddCircleRounded';
+import InfoIcon from '@mui/icons-material/Info';
 
 export default function SimpleBottomNavigation() {
   const [value, setValue] = useState(0);
@@ -25,11 +26,13 @@ export default function SimpleBottomNavigation() {
           if (newValue === 0) router.push('/');
           if (newValue === 1) router.push('/profile');
           if (newValue === 2) router.push('/posts');
+          if (newValue === 3) router.push('/o-mne');
         }}
       >
         <BottomNavigationAction label="Home" icon={<HomeRoundedIcon />} />
         <BottomNavigationAction label="Profile" icon={<AccountCircleRoundedIcon />} />
         <BottomNavigationAction label="Add Post" icon={<AddCircleRoundedIcon />} />
+        <BottomNavigationAction label="o-mne" icon={<InfoIcon />} />
       </BottomNavigation>
     </Box>
   );
