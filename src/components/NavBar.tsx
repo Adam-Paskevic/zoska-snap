@@ -32,7 +32,7 @@ export default function SimpleBottomNavigation() {
         <BottomNavigationAction label="Home" icon={<HomeRoundedIcon />} />
         <BottomNavigationAction label="Profile" icon={<AccountCircleRoundedIcon />} />
         <BottomNavigationAction label="Add Post" icon={<AddCircleRoundedIcon />} />
-        <BottomNavigationAction label="o-mne" icon={<InfoIcon />} />
+        <BottomNavigationAction label="O-mne" icon={<InfoIcon />} />
       </BottomNavigation>
     </Box>
   );
